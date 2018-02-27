@@ -23,7 +23,7 @@ public class JogoDeAdivinharNumeros {
             if(palpite < numero){
                     System.out.println("O meu número é maior. Tente de novo");
             } else {
-                System.out.println("Paraben voce acertou meu numero em: " + tentativas + " tentativa(s)!");
+                System.out.println("Parabens voce acertou meu numero em: " + tentativas + " tentativa(s)!");
                  if(tentativas == 1 ){
                      System.out.println("Que Sorte !!");
                  } if (tentativas < 11 && tentativas > 1){
@@ -50,7 +50,7 @@ public class JogoDeAdivinharNumeros {
         Scanner entrada = new Scanner(System.in);
         
         Random geradorDeAleatorios = new Random();
-        sorteado = geradorDeAleatorios.nextInt(1) + 1;
+        sorteado = geradorDeAleatorios.nextInt(250) + 1;
         System.out.println("Número entre 1 e 250 sorteado!");
         
         do{
