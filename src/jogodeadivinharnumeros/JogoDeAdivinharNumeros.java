@@ -55,7 +55,7 @@ public class JogoDeAdivinharNumeros {
         
         do{
             System.out.printf("\n\n-----------------\n");
-            System.out.println("Número de tentativas: " + tentativas);
+            System.out.println("Número de tentativas: " + tentativas + " de 20");
             
             System.out.print("Qual seu palpite: ");
             
