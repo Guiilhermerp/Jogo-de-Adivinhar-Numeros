@@ -51,6 +51,7 @@ public class JogoDeAdivinharNumeros {
         
         Random geradorDeAleatorios = new Random();
         sorteado = geradorDeAleatorios.nextInt(250) + 1;
+        System.out.println("Adivinhe o número!");
         System.out.println("Número entre 1 e 250 sorteado!");
         
         do{
