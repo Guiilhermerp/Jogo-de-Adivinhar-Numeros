@@ -30,12 +30,13 @@ public class JogoDeAdivinharNumeros {
                      System.out.println("Muito Bem !!");
                  } if (tentativas > 10) {
                      System.out.println(" ");
-                 } if (tentativas == 21) {
+                 } 
+                }
+                    if (tentativas > 20) {
                     System.out.println("Infelizmente você perdeu! Meu número foi " + numero);
                 }
             }
         }
-    }
             
     public static void Jogar(){
         int palpite=0, 
@@ -58,7 +59,7 @@ public class JogoDeAdivinharNumeros {
             
             System.out.print("Qual seu palpite: ");
             
-            
+            do{
             try{
                palpite = Integer.parseInt(entrada.nextLine());
                flag = true;
@@ -66,15 +67,15 @@ public class JogoDeAdivinharNumeros {
                 System.out.println(" ");
                 System.out.println("Por favor, digite apenas números!");
                 System.out.println(" ");
-                
-            }   
-            
+                flag = false; // para ter certeza 
+            } 
+            }while(!flag);   
             
             
             tentativas++;
             
             dica(palpite,sorteado, tentativas);
-        }while (palpite != sorteado && tentativas != 22);
+        }while (palpite != sorteado && tentativas != 21);
         System.out.println(" ");
         
         do{
